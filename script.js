@@ -1,4 +1,4 @@
-// declaration 
+// Declaration 
 var hearts = document.getElementsByClassName("like");
 var qte = document.getElementsByClassName("Quant");
 var min = document.getElementsByClassName("minus-btn");
@@ -8,7 +8,7 @@ var price = document.getElementsByClassName("price");
 var total = document.getElementById("finalPrice");
 
 
-// Update total
+// Update Total
 
 for (var i = 0; i < qte.length; i++) {
     qte[i].addEventListener('change', function () {
@@ -24,7 +24,7 @@ function updateTotal() {
     total.value = totalPrice;
 }
 
-// delete function & update
+// Delete Function & Update Total
 
 for (var i = 0; i < del.length; i++) {
     (function (i) {
@@ -39,7 +39,7 @@ function DeleteEl(qte) {
     qte.value = 0;
 }
 
-// min function
+// Min Function & Update Total
 
 for (var i = 0; i < min.length; i++) {
     (function (i) {
@@ -56,7 +56,7 @@ function minQte(qte) {
     }
 }
 
-// plus function
+// Plus Function & Update Total
 
 for (var i = 0; i < plus.length; i++) {
     (function (i) {
@@ -71,7 +71,7 @@ function plusQte(qte) {
     qte.value = parseInt(qte.value) + 1;
 }
 
-// Change heart Color
+// Change Heart Color
 
 for (var i = 0; i < hearts.length; i++) {
     hearts[i].addEventListener('click', function () {
