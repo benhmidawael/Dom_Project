@@ -8,6 +8,9 @@ var price = document.getElementsByClassName("price");
 var total = document.getElementById("finalPrice");
 var DivItems = document.querySelector(".items");
 var ItemDiv = document.querySelectorAll('.Item');
+updateTotal();
+
+
 
 // change qte & Update Total 
 
