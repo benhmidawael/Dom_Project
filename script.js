@@ -29,7 +29,7 @@ function updateTotal() {
 
 for (let i = 0; i < del.length; i++) {
     del[i].addEventListener('click', function () {
-        DivItems.removeChild(ItemDiv.item(i));
+        DivItems.removeChild(ItemDiv[i]);
         updateTotal();
     });
 }
@@ -37,9 +37,9 @@ for (let i = 0; i < del.length; i++) {
 // Min Function & Update Total
 
 for (let i = 0; i < min.length; i++) {
-        min[i].addEventListener('click', function () {
-            minQte(qte[i]);
-        });
+    min[i].addEventListener('click', function () {
+        minQte(qte[i]);
+    });
 }
 
 function minQte(qte) {
@@ -52,10 +52,10 @@ function minQte(qte) {
 // Plus Function & Update Total
 
 for (let i = 0; i < plus.length; i++) {
-        plus[i].addEventListener('click', function () {
-            plusQte(qte[i]);
-            updateTotal();
-        });
+    plus[i].addEventListener('click', function () {
+        plusQte(qte[i]);
+        updateTotal();
+    });
 }
 
 function plusQte(qte) {
